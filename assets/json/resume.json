@@ -2,7 +2,7 @@
   "basics": {
     "name": "Alyssa Player",
     "label": "Data Scientist",
-    "image": "",
+    "image": "prof_pic.jpg",
     "email": "alyssa18player@gmail.com",
     "phone": "(857) 318-1936",
     "url": "https://alyssaplayer.github.io/",
@@ -13,21 +13,14 @@
       "city": "Los Angeles",
       "countryCode": "US",
       "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    }
   },
   "work": [
     {
       "name": "California Institute of Technology",
       "position": "Research Technician",
       "url": "https://beacon.caltech.edu/",
-      "startDate": "July 2024",
+      "startDate": "2024-07-01",
       "endDate": "Present",
       "summary": "Research and laboratory management for the Beacon Opto-Fluidic Platform.",
       "highlights": [
@@ -40,14 +33,13 @@
         "Create visual graphics and images for educational materials, promotional resources, and web design for the center",
         "Dedicated member of ‘Caltech Green Labs’ aiming to promote sustainable within laboratory science"
       ]
-    }
-
-   {
+    },
+    {
       "name": "Vantuna Research Group, Occidental College",
       "position": "Research Assistant",
       "url": "https://www.oxy.edu/academics/vantuna-research-group",
-      "startDate": "February 2022",
-      "endDate": "May 2024",
+      "startDate": "2022-02-01",
+      "endDate": "2024-05-01",
       "summary": "Undergraduate Research Assistant and Student Mentor.",
       "highlights": [
         "Completed a two-year independently driven Honors Thesis that studied artificial reefs as conservation habits for climate-threatened species along the Southern California Bight with analyses completed in R",
@@ -56,25 +48,23 @@
         "Mentored 5-10 new students per semester in efficient lab practices, sample collection, and data entry during weekly office hours",
         "Trained on substrate population transects on SCUBA to collect field data for annual quantitative population surveys",
         "Collaborated with the Discovery Bay Marine Lab, Jamaica as a Richter Trust Scholar on a two-week data collection trip for an ongoing reef monitoring/ coral restoration project to observe annual organismal growth and recruitment to the reefs"
-]
+      ]
     }
   ],
-      
   "volunteer": [
     {
       "organization": "Green Labs, California Institute of Technology",
       "url": "https://greenlabs.caltech.edu/",
-      "startDate": "July 2024",
+      "startDate": "2024-07-01",
       "endDate": "Present",
       "summary": "Assist outreach initiatives to educate the Caltech research community on sustainable practices and waste diversion strategies."
-    }
+    },
     {
       "organization": "Letters to a Pre-Scientist",
       "url": "https://prescientist.org/",
-      "startDate": "September 2024",
+      "startDate": "2024-09-01",
       "endDate": "Present",
       "summary": "Serve as a STEM pen-pal mentor to inspire curiosity and expand the student's perspective on the scientific profession."
-
     }
   ],
   "education": [
@@ -83,18 +73,21 @@
       "location": "Remote / Boston, Massachusetts",
       "area": "Data Science",
       "studyType": "MS",
-      "startDate": "September 2025",
-      "endDate": "December 2026",
-      "courses": ["Programming Fundamentals", "AI for Leaders", "Math Fundamentals"]
-    }
-
+      "startDate": "2025-09-01",
+      "endDate": "2026-12-01",
+      "courses": [
+        "Programming Fundamentals",
+        "AI for Leaders",
+        "Math Fundamentals"
+      ]
+    },
     {
       "institution": "Occidental College",
       "location": "Eagle Rock, California",
       "area": "Biology",
       "studyType": "BS with Hons",
-      "startDate": "August 2020",
-      "endDate": "May 2024",
+      "startDate": "2020-08-01",
+      "endDate": "2024-05-01"
     }
   ],
   "awards": [
@@ -230,7 +223,10 @@
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "highlights": [
+        "Quantum Teleportation",
+        "Quantum Cryptography"
+      ],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"
