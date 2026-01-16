@@ -55,8 +55,7 @@
     {
       "institution": "Boston University",
       "location": "Remote / Boston, MA",
-      "area": "Data Science",
-      "studyType": "Master's",
+      "studyType": "MS in Data Science",
       "startDate": "2025-09-01",
       "endDate": "2026-12-01",
       "relevant courses": [
@@ -68,8 +67,7 @@
     {
       "institution": "Occidental College",
       "location": "Eagle Rock, CA",
-      "area": "Biology",
-      "studyType": "Bachelor of Science with Honor's",
+      "studyType": "BA in Biology with Honors",
       "startDate": "2020-08-01",
       "endDate": "2024-05-01"
     }
