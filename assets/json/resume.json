@@ -51,6 +51,38 @@
       ]
     }
   ],
+  "education": [
+    {
+      "institution": "Boston University",
+      "location": "Remote / Boston, MA",
+      "area": "Data Science",
+      "studyType": "Master's",
+      "startDate": "2025-09-01",
+      "endDate": "2026-12-01",
+      "relevant courses": [
+        "Programming Fundamentals",
+        "AI for Leaders",
+        "Math Fundamentals"
+      ]
+    },
+    {
+      "institution": "Occidental College",
+      "location": "Eagle Rock, CA",
+      "area": "Biology",
+      "studyType": "Bachelor of Science with Honor's",
+      "startDate": "2020-08-01",
+      "endDate": "2024-05-01"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Google Data Analytics",
+      "date": "2025-08-26",
+      "issuer": "Coursera",
+      "url": "https://coursera.org/share/f0b297ba19b0bf3244778aed251edc4b",
+      "icon": "fa-solid fa-star"
+    }
+  ],
   "volunteer": [
     {
       "organization": "Green Labs, California Institute of Technology",
@@ -65,70 +97,6 @@
       "startDate": "2024-09-01",
       "endDate": "Present",
       "summary": "Serve as a STEM pen-pal mentor to inspire curiosity and expand the student's perspective on the scientific profession."
-    }
-  ],
-  "education": [
-    {
-      "institution": "Boston University",
-      "location": "Remote / Boston, Massachusetts",
-      "area": "Data Science",
-      "studyType": "MS",
-      "startDate": "2025-09-01",
-      "endDate": "2026-12-01",
-      "courses": [
-        "Programming Fundamentals",
-        "AI for Leaders",
-        "Math Fundamentals"
-      ]
-    },
-    {
-      "institution": "Occidental College",
-      "location": "Eagle Rock, California",
-      "area": "Biology",
-      "studyType": "BS with Hons",
-      "startDate": "2020-08-01",
-      "endDate": "2024-05-01"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Google Data Analytics",
-      "date": "2025-08-26",
-      "issuer": "Coursera",
-      "url": "https://coursera.org/share/f0b297ba19b0bf3244778aed251edc4b",
-      "icon": "fa-solid fa-star"
-    }
-  ],
-  "awards": [
-    {
-      "title": "Marty Morton and Maria Pereya Award for Integrative Approach to Organismal Research",
-      "date": "2024",
-      "awarder": "Occidental College, Biology Department",
-      "summary": "Awarded annually to an Oxy Biology student whose research and work exemplify an integrative approach to the study of organisms.'"
-    },
-    {
-      "title": "Richter Scholar for Research Abroad",
-      "date": "2024",
-      "awarder": "Occidental College, Biology Department",
-      "summary": "A competitive grant funding international research projects for students to promote scholarly merit and cross-cultural engagement. '"
-    },
-    {
-      "title": "Sarah H. Roberts '68 and David H. Roberts '67 Annual Research Fellow in the Natural Sciences",
-      "date": "2023",
-      "awarder": "Occidental College, Biology Department",
-      "summary": "Awarded annually to an Oxy Biology student whose research takes an innovative and oustanding approach '"
-    },
-    {
-      "title": "Academic Student Project Spring",
-      "date": "2023",
-      "awarder": "Occidental College, Undergraduate Research Center",
-      "summary": "A grant awarded to Oxy students to fund an independent research project throughout the academic term'"
-    },
-    {
-      "title": "Undergraduate Research Center Summer Research Program",
-      "date": "2023",
-      "awarder": "Occidental College, Undergraduate Research Center",
-      "summary": "Funding awarded to Oxy students to support 8-weeks of an independent research project"
     }
   ],
   "publications": [
@@ -194,6 +162,38 @@
       ]
     }
   ],
+    "awards": [
+    {
+      "title": "Marty Morton and Maria Pereya Award for Integrative Approach to Organismal Research",
+      "date": "2024",
+      "awarder": "Occidental College, Biology Department",
+      "summary": "Awarded annually to an Oxy Biology student whose research and work exemplify an integrative approach to the study of organisms.'"
+    },
+    {
+      "title": "Richter Scholar for Research Abroad",
+      "date": "2024",
+      "awarder": "Occidental College, Biology Department",
+      "summary": "A competitive grant funding international research projects for students to promote scholarly merit and cross-cultural engagement. '"
+    },
+    {
+      "title": "Sarah H. Roberts '68 and David H. Roberts '67 Annual Research Fellow in the Natural Sciences",
+      "date": "2023",
+      "awarder": "Occidental College, Biology Department",
+      "summary": "Awarded annually to an Oxy Biology student whose research takes an innovative and oustanding approach '"
+    },
+    {
+      "title": "Academic Student Project Spring",
+      "date": "2023",
+      "awarder": "Occidental College, Undergraduate Research Center",
+      "summary": "A grant awarded to Oxy students to fund an independent research project throughout the academic term'"
+    },
+    {
+      "title": "Undergraduate Research Center Summer Research Program",
+      "date": "2023",
+      "awarder": "Occidental College, Undergraduate Research Center",
+      "summary": "Funding awarded to Oxy students to support 8-weeks of an independent research project"
+    }
+  ],
   "languages": [
     {
       "language": "English",
@@ -215,23 +215,24 @@
     {
       "name": "Dr Kate Malecek",
       "icon": "fa-solid fa-user-tie",
-      "email": "kmalecek@caltech.edu",
+      "email": "<a href='mailto:kmalecek@caltech.edu'>kmalecek@caltech.edu</a>",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
       "name": "Dr Jennifer Keeffe",
       "icon": "fa-solid fa-user-tie",
-      "email": "cmunoz@oxy.edu",
+      "email": "<a href='mailto:jkeeffe@caltech.edu'>jkeeffe@caltech.edu</a>",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
       "name": "Chelsea Williams",
       "icon": "fa-solid fa-user-tie",
-      "email": "cmunoz@oxy.edu",
+      "email": "<a href='mailto:cmunoz@oxy.edu'>cmunoz@oxy.edu</a>",
+
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
-  "interests": [
+  "Other": [
     {
       "name": "Interests",
       "icon": "fa-solid fa-heart",
