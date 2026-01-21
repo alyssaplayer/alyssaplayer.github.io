@@ -5,7 +5,7 @@ description: Analysis of Palos Verdes Reef as a refuge for climate-threatened sp
 img: assets/img/your-thumbnail-image.jpg
 importance: 1
 category: work
-github: https://github.com/yourusername/AP-VRG-PVR-RefugiaAR
+github: https://github.com/alyssaplayer/AP-VRG-PVR-RefugiaAR
 ---
 
 ## The role of Palos Verdes Reef as a refuge habitat for climate-threatened species
