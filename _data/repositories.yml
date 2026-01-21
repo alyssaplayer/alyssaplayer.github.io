@@ -1,5 +1,6 @@
-repo_description_lines_max: 2
+repo_description_lines_max: 5
 
 github_repos:
   - alyssaplayer/AP-VRG-PVR-RefugiaAR
-  - alyssaplayer/hello-world
+  - alyssaplayer/alyssaplayer.github.io
+  - alyssaplayer/Beacon-Center
