@@ -6,6 +6,7 @@ img: assets/img/batstars.jpeg
 importance: 1
 category: work
 github: https://github.com/alyssaplayer/AP-VRG-PVR-RefugiaAR
+permalink: /projects/refugia-ar/
 ---
 
 ## The role of Palos Verdes Reef as a refuge habitat for climate-threatened species
