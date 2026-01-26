@@ -390,7 +390,7 @@ ninja.data = [{
           title: 'AP-VRG-PVR-RefugiaAR',
           description: "Analysis of Palos Verdes Reef as a refuge for climate-threatened species.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/refugia-ar/";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
