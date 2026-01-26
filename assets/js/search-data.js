@@ -400,9 +400,9 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+      },{id: "projects-ap-vrg-pvr-refugiaar",
+          title: 'AP-VRG-PVR-RefugiaAR',
+          description: "Analysis of Palos Verdes Reef as a refuge for climate-threatened species.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
