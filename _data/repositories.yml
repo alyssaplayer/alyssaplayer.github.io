@@ -1,6 +1,7 @@
-repo_description_lines_max: 5
+github_users:
+  - alyssaplayer
 
-github_users: [alyssaplayer]
+repo_description_lines_max: 5
 
 github_repos:
   - alyssaplayer/AP-VRG-PVR-RefugiaAR
