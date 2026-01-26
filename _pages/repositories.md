@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Showcasing specific GitHub repositories. 
+description: A collection of my repositories. Please visit the README.md files to learn more about these projects. 
 nav: true
 nav_order: 3
 ---
