@@ -12,16 +12,8 @@ github: https://github.com/alyssaplayer/AP-VRG-PVR-RefugiaAR
 
 This project analyses the role of artificial reefs acting as conservation habitats for climate-threatened species, most notably sea stars and sea urchins, along the Southern California Bight. This project employs multiple analytical approaches, and all data processing and statistical testing were conducted in R.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-            <img src="{{ 'assets/img/density_by_depth_stars.png' | relative_url }}" 
-                 title="Density per 100m2 by Wasting Era and Site Type" 
-                 class="img-fluid rounded z-depth-1">
-            <figcaption class="text-center">Density per 100m2 by Wasting Era and Site Type</figcaption>
-        </figure>
-    </div>
-</div>
+<img width="3000" height="2400" alt="density_by_depth_stars" src="https://github.com/user-attachments/assets/7c8b842d-c02c-49ef-88db-5a6aeccac266" />
+
 
 ## Analyses
 
