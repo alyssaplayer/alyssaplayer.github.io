@@ -5,6 +5,7 @@ title: publications
 description: In-progress projects leading toward publication 
 nav: true
 nav_order: 5
+published: false
 ---
 
 <!-- _pages/publications.md -->
