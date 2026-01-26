@@ -1,5 +1,7 @@
 repo_description_lines_max: 5
 
+github_users: [alyssaplayer]
+
 github_repos:
   - alyssaplayer/AP-VRG-PVR-RefugiaAR
   - alyssaplayer/AP_DataScience_Projects
