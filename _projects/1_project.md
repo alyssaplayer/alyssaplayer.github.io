@@ -14,12 +14,12 @@ This project analyses the role of artificial reefs acting as conservation habita
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/your-plot.jpg" title="Population Metrics" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/density_by_depth_stars.png" title="Density per 100m2 by Wasting Era and Site Type" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 ## Analyses
 
-* **Population Metrics:** Generated box plots to visualise density of focal species across distinct eras (pre-, during-, and post-wasting events).
+* **Population Metrics:** Generated box plots to visualise the density of focal species across distinct eras (pre-, during-, and post-wasting events).
 * **Spatio-temporal Analysis:** Utilised Progressive-Change BACIPs (Before-After-Control-Impact Paired Series) models to assess the effects of human intervention on the surrounding ecosystems.
 * **Geographical Visualisation:** Mapped survey locations across the Southern California Bight using site coordinates to provide visual context during data presentation.
