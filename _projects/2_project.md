@@ -1,81 +1,94 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: Automated Property Valuation
+description: Supervised ML model to predict residential assessed property values using Zillow data
+img: assets/img/your-cover-image.jpg
+importance: 1
+category: machine learning
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Built a supervised machine learning model in Python to predict residential property valuations, applying feature engineering, model selection, and performance evaluation on real-world Zillow data.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+---
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Overview
+
+This project addressed the challenge of accurately pricing residential properties at scale for a real estate data platform. We engineered features from raw property data, evaluated
+three regression models, and selected a Gradient Boosting model that achieved a cross-validation MAE of $189,297 and a test MAE of $195,927 which outperformed linear and
+tree-based baselines by a significant margin.
+
+---
+
+## Data & Preprocessing 
+
+The dataset used is a subset of the Zillow Kaggle competition dataset (77,613 properties, 55 features). Preprocessing involved removing columns with >90% missing values, median/mode imputation, one-hot encoding, and outlier filtering. The target variable (`taxvaluedollarcnt`) was highly right-skewed, which influenced the selection of MAE over RMSE
+as the primary performance metric.
+
+--- 
+
+## Feature Engineering 
+
+Engineered features included log-transformed square footage (`log_sqft`), squared square footage (`sqft_squared`), bathroom-to-bedroom ratio, and house age. These transformations
+were most impactful for Lasso Regression, reducing its CV MAE from $242k to $234k.
+Tree-based models did not benefit from these transformations as they handle nonlinear relationships. 
+
+
+---
+
+## Model Results
+
+| Model                 | CV MAE       | Test MAE     |
+|-----------------------|-------------|-------------|
+| Lasso Regression      | $233,626    | —           |
+| Decision Tree         | $209,967    | —           |
+| **Gradient Boosting** | **$189,297**| **$195,927**|
+
+Training MAE was $157, 135 which indicates mild overfitting but the model was shown to still generalise well. 
+
+---
+
+## Feature Importance
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/zillow/feature_importance.png" title="Feature Importance" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/zillow/correlation_matrix.png" title="Correlation Matrix" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: Gradient Boosting feature importances — sqft_squared dominates, followed by
+    finished square footage and bathroom counts. Right: Pairwise correlations confirm
+    that size-related features drive tax value most strongly.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Target Distribution & Residuals
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/zillow/distributions.png" title="Feature Distributions" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    The target variable is strongly right-skewed. A small number of high-value outliers
+    inflate the mean and contributed to the model's maximum absolute error of $40.8M.
+    The model is well-balanced overall, with near-equal over- and under-prediction rates.
+</div>
 
-{% endraw %}
+---
+
+## Limitations & Next Steps
+
+The model struggles with extreme high-value properties due to high skew in the target variable. Future work
+would include additional hyperparameter tuning, comparison with more complex models such as Random Forest, and enriching the
+dataset with neighborhood-level features (proximity to schools, walkability, comparable sales).
+
+---
+
+## Code & Report
+
+- 📄 <a href="/assets/pdf/zillow_exec_summary.pdf">Executive Summary</a>
+- ⚙️ <a href="https://github.com/alyssaplayer/BU_OMDS_APlayerRepo/blob/main/DX603_FinalProject_ZillowValuationTool.ipynb">GitHub Repository with Project Code (Python) </a>
