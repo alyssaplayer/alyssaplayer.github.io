@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A collection of selected projects.
+description: A curated selection of data analysis and machine learning projects.
 nav: true
 nav_order: 2
-display_categories: [work]
+display_categories: [machine learning, ecology]
 horizontal: false
 published: true 
 
