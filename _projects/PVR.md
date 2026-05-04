@@ -4,7 +4,7 @@ title: AP-VRG-PVR-RefugiaAR
 description: Analysis of Palos Verdes Reef as a refuge for climate-threatened species.
 img: assets/img/batstars.jpeg
 importance: 1
-category: work
+category: ecology
 github: https://github.com/alyssaplayer/AP-VRG-PVR-RefugiaAR
 permalink: /projects/refugia-ar/
 ---
