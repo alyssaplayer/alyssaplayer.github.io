@@ -430,7 +430,7 @@ ninja.data = [{
               window.location.href = "/projects/9_project/";
             },},{id: "projects-ap-vrg-pvr-refugiaar",
           title: 'AP-VRG-PVR-RefugiaAR',
-          description: "Analysis of Palos Verdes Reef as a refuge for climate-threatened species.",
+          description: "Analysis of the Palos Verdes Reef as a refuge for climate-threatened species.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/refugia-ar/";
             },},{id: "projects-automated-property-valuation",
