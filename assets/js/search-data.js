@@ -428,8 +428,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-ap-vrg-pvr-refugiaar",
-          title: 'AP-VRG-PVR-RefugiaAR',
+            },},{id: "projects-palos-verdes-reef-as-refuge-habitat",
+          title: 'Palos Verdes Reef as Refuge Habitat',
           description: "Analysis of the Palos Verdes Reef as a refuge for climate-threatened species.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/refugia-ar/";
