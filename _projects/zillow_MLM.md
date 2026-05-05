@@ -9,7 +9,7 @@ category: machine learning
 
 Built a supervised machine learning model in Python to predict residential property valuations, applying feature engineering, model selection, and performance evaluation on real-world Zillow data.
 
----
+<hr>
 
 ## Overview
 
@@ -17,14 +17,14 @@ This project addressed the challenge of accurately pricing residential propertie
 three regression models, and selected a Gradient Boosting model that achieved a cross-validation MAE of $189,297 and a test MAE of $195,927 which outperformed linear and
 tree-based baselines by a significant margin.
 
----
+
 
 ## Data & Preprocessing 
 
 The dataset used is a subset of the Zillow Kaggle competition dataset (77,613 properties, 55 features). Preprocessing involved removing columns with >90% missing values, median/mode imputation, one-hot encoding, and outlier filtering. The target variable (`taxvaluedollarcnt`) was highly right-skewed, which influenced the selection of MAE over RMSE
 as the primary performance metric.
 
---- 
+
 
 ## Feature Engineering 
 
@@ -33,7 +33,7 @@ were most impactful for Lasso Regression, reducing its CV MAE from $242k to $234
 Tree-based models did not benefit from these transformations as they handle nonlinear relationships. 
 
 
----
+
 
 ## Model Results
 
@@ -43,9 +43,9 @@ Tree-based models did not benefit from these transformations as they handle nonl
 | Decision Tree         | $209,967    | —           |
 | **Gradient Boosting** | **$189,297**| **$195,927**|
 
-Training MAE was $157, 135 which indicates mild overfitting but the model was shown to still generalise well. 
+Training MAE was $157,135 which indicates mild overfitting but the model was shown to still generalise well. 
 
----
+
 
 ## Feature Importance
 
@@ -63,7 +63,7 @@ Training MAE was $157, 135 which indicates mild overfitting but the model was sh
     that size-related features drive tax value most strongly.
 </div>
 
----
+
 
 ## Target Distribution & Residuals
 
@@ -78,7 +78,7 @@ Training MAE was $157, 135 which indicates mild overfitting but the model was sh
     The model is well-balanced overall, with near-equal over- and under-prediction rates.
 </div>
 
----
+
 
 ## Limitations & Next Steps
 
@@ -86,7 +86,7 @@ The model struggles with extreme high-value properties due to high skew in the t
 would include additional hyperparameter tuning, comparison with more complex models such as Random Forest, and enriching the
 dataset with neighborhood-level features (proximity to schools, walkability, comparable sales).
 
----
+
 
 ## Code & Report
 
