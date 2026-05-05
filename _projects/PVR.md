@@ -15,7 +15,9 @@ permalink: /projects/refugia-ar/
 
 This project analyses the role of artificial reefs acting as conservation habitats for climate-threatened species, most notably sea stars and sea urchins, along the Southern California Bight. This project employs multiple analytical approaches, and all data processing and statistical testing were conducted in R.
 
-<img width="300" height="240" alt="density_by_depth_stars" src="https://github.com/user-attachments/assets/7c8b842d-c02c-49ef-88db-5a6aeccac266" />
+<img width="1000" height="500" alt="density_by_depth_stars" src="https://github.com/user-attachments/assets/7c8b842d-c02c-49ef-88db-5a6aeccac266" />
+
+
 
 
 ## Analyses
