@@ -6,7 +6,7 @@
     "email": "alyssa18player@gmail.com",
     "phone": "(857) 318-1936",
     "url": "https://alyssaplayer.github.io/",
-    "summary": "A Data Science Master's student seeking opportunities in the digital marketing, media, and entertainment industries.",
+    "summary": "Data Scientist and Biologist seeking opportunities in the digital marketing, media, and entertainment industries, as well as visual and online design platforms.",
     "location": {
       "address": "147 S Avenue 53",
       "postalCode": "CA 90042",
@@ -142,11 +142,11 @@
       "name": "Data Analytics",
       "icon": "fa-solid fa-chart-line",
       "keywords": [
-        "R (dplyr & tidyverse)",
+        "R (dplyr, ggplot, tidyverse)",
         "SQL & Database Management",
         "Hypothesis Testing",
         "Statistical Modelling",
-        "Data Visualisation (Seaborn/Matplotlib/Tableau)"
+        "Data Visualisation (Seaborn/Matplotlib/Tableau/PowerBI)"
       ]
     },
     {
@@ -154,6 +154,7 @@
       "icon": "fa-solid fa-dna",
       "keywords": [
         "Experimental Design",
+        "Biostatistics",
         "Biological Data Analysis",
         "Population Density Studies",
         "Field Research"
