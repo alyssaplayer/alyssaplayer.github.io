@@ -15,17 +15,19 @@ permalink: /projects/refugia-ar/
 
 This project analyses the role of artificial reefs acting as conservation habitats for climate-threatened species, most notably sea stars and sea urchins, along the Southern California Bight. This project employs multiple analytical approaches, and all data processing and statistical testing were conducted in R. This project was completed in collaboration with the Vantuna Research Group at Occidental College. 
 
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/density_by_depth_stars.png" title="Density of Focal Sea Star Species" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/density_urchins.png" title="Density of Focal Urchin Species" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="col-sm mt-3 mt-md-0">
+{% include figure.liquid path="assets/img/density_by_depth_stars.png" title="Density of Focal Sea Star Species" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="col-sm mt-3 mt-md-0">
+{% include figure.liquid path="assets/img/density_urchins.png" title="Density of Focal Urchin Species" class="img-fluid rounded z-depth-1" %}
+</div>
 </div>
 <div class="caption">
-    Left: Density of focal sea star species. Right: Density of focal urchin species.
+Left: Density of focal sea star species. Right: Density of focal urchin species.
 </div>
+
 
 ## Analyses
 
