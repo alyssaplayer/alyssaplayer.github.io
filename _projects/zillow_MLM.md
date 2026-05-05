@@ -5,6 +5,7 @@ description: Supervised ML model to predict residential assessed property values
 img: assets/img/zillow_house.png
 importance: 1
 category: machine learning
+permalink: /projects/zillow/
 ---
 
 Built a supervised machine learning model in Python to predict residential property valuations, applying feature engineering, model selection, and performance evaluation on real-world Zillow data.
