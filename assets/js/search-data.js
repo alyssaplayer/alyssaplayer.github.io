@@ -437,7 +437,7 @@ ninja.data = [{
           title: 'Automated Property Valuation',
           description: "Supervised ML model to predict residential assessed property values using Zillow data",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/zillow_MLM/";
+              window.location.href = "/projects/zillow/";
             },},{
         id: 'social-cv',
         title: 'CV',
