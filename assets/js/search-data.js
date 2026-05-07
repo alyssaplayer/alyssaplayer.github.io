@@ -393,12 +393,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
+      },{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -433,6 +428,11 @@ ninja.data = [{
           description: "Analysis of the Palos Verdes Reef as a refuge for climate-threatened species.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/refugia-ar/";
+            },},{id: "projects-colour-palette-extractor-tool",
+          title: 'Colour Palette Extractor Tool',
+          description: "A Python tool that uses K-Means clustering to extract dominant colours from an image and outputs hex codes with accessibility recommendations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/colour_palette/";
             },},{id: "projects-automated-property-valuation",
           title: 'Automated Property Valuation',
           description: "Supervised ML model to predict residential assessed property values using Zillow data",
