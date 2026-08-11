@@ -1,4 +1,17 @@
+---
+layout: page
+title: MS Data Science Capstone Project (US-ECommerce)
+description: Application of varied machine learning techniques to a US E-Commerce dataset from 2020 to identify key profit drivers. 
+img: assets/img/us_ecommerce_projectcard.png
+importance: 2
+category: machine learning
+permalink: /projects/usecommerce/
+---
+
+
+
 Built supervised and unsupervised machine learning models in Python to predict order-level profit drivers for a US e-commerce retailer, applying feature scaling, hyperparameter tuning, and cluster analysis on real-world transaction data.
+
 <hr>
 
 ## Background
