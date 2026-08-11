@@ -5,7 +5,7 @@ permalink: /projects/
 description: A curated selection of data analysis and machine learning projects.
 nav: true
 nav_order: 2
-display_categories: [machine learning, ecology]
+display_categories: [machine learning, ecology, for fun]
 horizontal: false
 published: true 
 
