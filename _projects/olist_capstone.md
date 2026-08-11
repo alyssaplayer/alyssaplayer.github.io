@@ -38,7 +38,8 @@ Scaling had a much smaller effect on Olist than on comparable models trained on 
 | Gradient Boosting (Classifier) | Test Accuracy | 62.16%                   |
 | K-Means (k=4)                  | Silhouette    | 0.202 (best of tested k) |
 
-KNN improved over baseline (RMSE 1.2138, R² 0.1713) but required a far larger neighbourhood than the comparable US e-commerce model (k=50 vs. k=3) (highlighted on its own project page ()), reinforcing that Olist's feature space carries weaker per-feature signal. Gradient Boosting underperformed Random Forest results from an earlier iteration of this project, and is likely due to the runtime-constrained algorithm (trained on a 30% subsample) rather than being unsuited to the problem.
+
+KNN improved over baseline (RMSE 1.2138, R² 0.1713) but required a far larger neighbourhood than the comparable US e-commerce model (k=50 vs. k=3) highlighted on its own — [project page](https://alyssaplayer.github.io/projects/usecommerce/) — reinforcing that Olist's feature space carries weaker per-feature signal. Gradient Boosting underperformed Random Forest results from an earlier iteration of this project, and is likely due to the runtime-constrained algorithm (trained on a 30% subsample) rather than being unsuited to the problem.
 
 
 
