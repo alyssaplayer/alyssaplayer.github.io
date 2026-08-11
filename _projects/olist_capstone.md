@@ -5,7 +5,7 @@ description: Application of varied machine learning techniques to data from the 
 img: assets/img/olist_projectcard.png
 importance: 1
 category: machine learning
-permalink: /projects/zillow/
+permalink: /projects/olistcapstone/
 ---
 
 Built supervised and unsupervised machine learning models in Python to predict customer satisfaction on the Brazilian e-commerce marketplace, Olist, merging nine relational tables and evaluating regression, classification, and clustering approaches.
