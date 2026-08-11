@@ -433,6 +433,11 @@ ninja.data = [{
           description: "Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/olistcapstone/";
+            },},{id: "projects-ms-data-science-capstone-project-us-ecommerce",
+          title: 'MS Data Science Capstone Project (US-ECommerce)',
+          description: "Application of varied machine learning techniques to a US E-Commerce dataset from 2020 to identify key profit drivers.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/usecommerce/";
             },},{id: "projects-automated-property-valuation",
           title: 'Automated Property Valuation',
           description: "Supervised ML model to predict residential assessed property values using Zillow data",
