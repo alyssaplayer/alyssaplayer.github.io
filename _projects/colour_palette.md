@@ -7,11 +7,12 @@ importance: 4
 category: for fun
 ---
 
+The purpose of this tool is to give designers a data-driven starting point for building a brand/design identity by extracting the dominant colour palette of any inspiration image. 
+
 Given any image, this tool identifies its most dominant colours using K-Means clustering and returns hex codes alongside recommended font colours for accessibility.
 
 This tool identifies the most dominant colours of any image using K-Means clustering and returns hex codes alongside recommended font colours for accessibility, using the Rec. 709 luminance formula. 
 
-The purpose of this tool is to give designers a data-driven starting point for building a brand/design identity by extracting the dominant colour palette of any inspiration image. 
 
 ## How It Works
 
