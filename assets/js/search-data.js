@@ -393,12 +393,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
+      },{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
@@ -433,6 +428,11 @@ ninja.data = [{
           description: "A Python tool that uses K-Means clustering to extract dominant colours from an image and outputs hex codes with accessibility recommendations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/colour_palette/";
+            },},{id: "projects-ms-data-science-capstone-project",
+          title: 'MS Data Science Capstone Project',
+          description: "Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/zillow/";
             },},{id: "projects-automated-property-valuation",
           title: 'Automated Property Valuation',
           description: "Supervised ML model to predict residential assessed property values using Zillow data",
