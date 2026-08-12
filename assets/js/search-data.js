@@ -428,8 +428,8 @@ ninja.data = [{
           description: "A Python tool that uses K-Means clustering to extract dominant colours from an image and outputs hex codes with accessibility recommendations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/colour_palette/";
-            },},{id: "projects-ms-data-science-capstone-project",
-          title: 'MS Data Science Capstone Project',
+            },},{id: "projects-predicting-customer-satisfaction-olist",
+          title: 'Predicting Customer Satisfaction (Olist)',
           description: "Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/olistcapstone/";
