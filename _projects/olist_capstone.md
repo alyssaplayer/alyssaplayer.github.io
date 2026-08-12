@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MS Data Science Capstone Project 
+title: Predicting Customer Satisfaction (Olist)
 description: Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.  
 img: assets/img/olist_projectcard.png
 importance: 1
@@ -8,7 +8,7 @@ category: machine learning
 permalink: /projects/olistcapstone/
 ---
 
-Built supervised and unsupervised machine learning models in Python to predict customer satisfaction on the Brazilian e-commerce marketplace, Olist, merging nine relational tables and evaluating regression, classification, and clustering approaches.
+Built supervised and unsupervised machine learning models in Python to predict customer satisfaction on the Brazilian e-commerce marketplace, Olist, merging nine relational tables and evaluating regression, classification, and clustering approaches as part of my Master's capstone project at Boston University.
 
 <hr>
 
