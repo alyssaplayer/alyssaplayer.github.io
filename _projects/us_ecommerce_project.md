@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Predicting Key Profit Drivers
+title: Predicting Key Profit Drivers from US E-Commerce Records 
 description: Application of varied machine learning techniques to a US E-Commerce dataset from 2020 to identify key profit drivers as part of my Master's capstone project at Boston University.
 img: assets/img/us_ecommerce_projectcard.png
 importance: 2
