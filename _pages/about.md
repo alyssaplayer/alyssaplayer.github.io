@@ -32,7 +32,7 @@ Outside of work, I embrace my creative side by making art and music, or recharge
     "
     onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 28px rgba(0,0,0,0.2)';"
     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';">
-    <h5 style="font-weight: 600; margin-bottom: 0.5rem;">🌞 Models, Metrics & More:</h5>
+    <h5 style="font-weight: 600; margin-bottom: 0.5rem;"> Models, Metrics & More:</h5>
     <p style="opacity: 0.9; margin-bottom: 1.25rem;">
       From predictive analytics tools to ecological analyses — check out my work:
     </p>
