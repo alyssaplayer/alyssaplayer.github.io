@@ -1,7 +1,7 @@
 ---
 layout: page
-title: MS Data Science Capstone Project (US-ECommerce)
-description: Application of varied machine learning techniques to a US E-Commerce dataset from 2020 to identify key profit drivers. 
+title: Predicting Key Profit Drivers
+description: Application of varied machine learning techniques to a US E-Commerce dataset from 2020 to identify key profit drivers as part of my Master's capstone project at Boston University.
 img: assets/img/us_ecommerce_projectcard.png
 importance: 2
 category: machine learning
