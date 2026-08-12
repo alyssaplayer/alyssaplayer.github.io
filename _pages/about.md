@@ -25,20 +25,20 @@ Outside of work, I embrace my creative side by making art and music, or recharge
       max-width: 30rem;
       width: 100%;
       border-radius: 1rem;
-      background: linear-gradient(135deg, #6a82fb 0%, #8e54e9 100%);
+      background: linear-gradient(135deg, #6a82fb 0%, #E6E6FA 100%);
       color: #fff;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     "
     onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 28px rgba(0,0,0,0.2)';"
     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';">
-    <h5 style="font-weight: 600; margin-bottom: 0.5rem;">🌞 "Models, Metrics & More":</h5>
+    <h5 style="font-weight: 600; margin-bottom: 0.5rem;">🌞 Models, Metrics & More:</h5>
     <p style="opacity: 0.9; margin-bottom: 1.25rem;">
       From predictive analytics tools to ecological analyses — check out my work:
     </p>
     <a href="{{ '/projects/' | relative_url }}" class="btn" style="
         background: #fff;
-        color: #E6E6FA;
+        color: #2b2b2b;
         font-weight: 600;
         border-radius: 0.5rem;
         padding: 0.5rem 1.5rem;
