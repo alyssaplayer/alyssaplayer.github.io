@@ -1,7 +1,13 @@
 repo_description_lines_max: 5
 
 github_repos:
-  - alyssaplayer/AP-VRG-PVR-RefugiaAR
-  - alyssaplayer/AP_DataScience_Projects
-  - alyssaplayer/alyssaplayer.github.io
-  - alyssaplayer/Beacon-Center
+  - repo: alyssaplayer/AP-VRG-PVR-RefugiaAR
+    description: "Analyses the role of Palos Verdes Reef as a conservation/refuge habitat for climate-threatened species using R for analyses.
+  - repo: alyssaplayer/BU-OMDS-APlayerRepo
+    description: "Collation of scripts for course projects for my Master's program at Boston University"
+  - repo: alyssaplayer/Beacon-Center
+    description: "JavaScript App Extensions for Google Sheets Functionality and other tools to improve workflows at Caltech"
+  - repo: alyssaplayer/AP_DataScience_Projects
+    description: "Python scripts that focus on automation, image processing, and algorithm practice."
+  - repo: alyssaplayer/alyssaplayer.github.io
+    description: "Source code for this personal portfolio website."
