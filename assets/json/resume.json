@@ -122,25 +122,42 @@
   ],
   "skills": [
     {
-      "name": "Data Science",
+      "name": "ML & Statistics",
       "icon": "fa-solid fa-brain",
       "keywords": [
-        "Supervised Learning",
-        "Unsupervised Learning",
-        "Model Evaluation",
-        "Python (Pandas & Numpy)",
-        "PCA & Dimensionality Reduction"
+              "Scikit-learn",
+              "Supervised & Unsupervised Learning Models",
+              "PCA & Dimensionality Reduction (PCR/PLSR)",
+              "Regularized Regression (Lasso, Ridge, ElasticNet)",
+              "Ensemble Methods (Random Forest, Gradient Boosting)",
+              "Classification (Logistic Regression, SVM, KNN)",
+              "Clustering (K-Means, DBSCAN, HAC)",
+              "Model Evaluation & Hyperparameter Tuning"
       ]
     },
     {
-      "name": "Data Analytics",
+      "name": "Data Visualisation",
       "icon": "fa-solid fa-chart-line",
       "keywords": [
-        "R (dplyr, ggplot, tidyverse)",
-        "SQL & Database Management",
-        "Hypothesis Testing",
+        "Seaborn",
+        "Matplotlib",
+        "Tableau",
         "Statistical Modelling",
-        "Data Visualisation (Seaborn/Matplotlib/Tableau/PowerBI)"
+        "Adobe Illustrator",
+        "GraphPad Prism"
+      ]
+    },
+    {
+      "name": "Languages & Tools",
+      "icon": "fa-solid fa-computer",
+      "keywords": [
+        "Python",
+        "R (R-Studio)",
+        "SQL", 
+        "HTML", 
+        "JavaScript", 
+        "Git/GitHub", 
+        "VS Code"
       ]
     },
     {
