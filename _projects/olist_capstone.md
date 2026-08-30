@@ -18,73 +18,56 @@ This project aimed to predict customer satisfaction (`review_score`, 1–5) for 
 
 
 ## Data & Preprocessing 
-
-The dataset is the Brazilian Olist E-Commerce Public Dataset (Kaggle), merged from nine relational tables into a master data frame of ~88,000 orders. Preprocessing included feature scaling, one-hot encoding of categorical fields, and dimensionality reduction via PCA (95% variance retained, 18 components). EDA revealed weak single-feature correlations with `review_score` and a U-shaped, imbalanced score distribution. These findings influenced the modelling choices below.
+The dataset is the Brazilian Olist E-Commerce Public Dataset (Kaggle), merged from the nine available relational tables into a master data frame of ~88,000 orders. Preprocessing included feature scaling, one-hot encoding of categorical fields, and dimensionality reduction via PCA (95% variance retained, 18 components). EDA revealed weak single-feature correlations with `review_score` and a U-shaped, imbalanced score distribution. These findings influenced the modeling choices below.
 
 
 ## Modelling Approach
+KNN and Gradient Boosting were deliberately framed differently to match what each algorithm needed to perform well against the same target. KNN was run as a regressor to preserve the ordinal structure of review_score, where a prediction of 4 should be penalized less than a prediction of 1 when the true score is 5. Gradient Boosting was framed as a 5-class classifier to get class-level precision and recall on the imbalanced, U-shaped score distribution and to better surface low-score cases that a regression model would likely average away.
 
-Two different formulations of the same target were deliberately used to best match what each algorithm required to perform well. 
-- **KNN** Used a regression model to preserve the ordinal structure of `review_score`. A prediction of 4 should be penalized less than a prediction of 1 when the true score is 5, which classification would treat those differences as equally incorrect.
+KNN was tuned via GridSearchCV across neighbour count, distance metric, and weighting scheme, ultimately selecting a large neighbourhood of k=50, which is well above a typical range. This is supported by the noisy feature space read from preprocessing. Gradient Boosting was trained as a classifier on a 30% subsample of the data due to runtime constraints, which likely understates its true performance relative to Random Forest.
 
-- **Gradient Boosting** Used a classification model to get class-level precision/recall on the imbalanced, U-shaped score distribution and to better identify low-score cases that a regression model would likely to average away.
-
-Scaling had a much smaller effect on Olist than on comparable models trained on cleaner datasets and GridSearchCV selected a large neighborhood (k=50) than typically expected. This indicates a noisy, diluted feature space, which is likely an artifact of merging the nine separate tables.
 
 ## Model Results
-| Model                          | Metric        | Result                  |
+| Model                          | Task        | Result                  |
 |---------------------------------|---------------|--------------------------|
-| KNN Regression (k=50)          | Test RMSE / R²| 1.1694 / 0.2309          |
-| Gradient Boosting (Classifier) | Test Accuracy | 62.16%                   |
-| K-Means (k=4)                  | Silhouette    | 0.202 (best of tested k) |
+| KNN Regression (k=50)          | Regression | RMSE 1.1694, R² 0.2309 |
+| Gradient Boosting (Classifier) | Classification | 62.16%                   |
+| K-Means (k=4)                  | Classification    | 63.84% |
 
 
-KNN improved over baseline (RMSE 1.2138, R² 0.1713) but required a far larger neighbourhood than the comparable US e-commerce model (k=50 vs. k=3) highlighted on its own <a href="https://alyssaplayer.github.io/projects/usecommerce/">project page</a> reinforcing that Olist's feature space carries weaker per-feature signal. Gradient Boosting underperformed Random Forest results from an earlier iteration of this project, and is likely due to the runtime-constrained algorithm (trained on a 30% subsample) rather than being unsuited to the problem.
-
-
+KNN improved modestly over the OLS/majority baseline (RMSE 1.2138, R² 0.1713) but needed a large neighbourhood to do so, further emphasising the weak per-feature signal in the merged dataset. Gradient Boosting underperformed the pre-tested Random Forest classifier, though the gap is partly attributable to the reduced training subsample (30%), defined for runtime constraints, rather than the model being poorly suited to the problem.
 
 ## Feature Importance
 
 <div class="row">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/feature_importance.png" title="Feature Importance" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/olist_featureimportance.png" title="Feature Importance" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/correlation_matrix.png" title="Correlation Matrix" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/olist_correlationmatrix.png" title="Correlation Matrix" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Left: Gradient Boosting feature importances — sqft_squared dominates, followed by
-    finished square footage and bathroom counts. Right: Pairwise correlations confirm
+    Left: Delivery delay days and seller average score denoted with high feature importance Right: Pairwise correlations confirm
     that size-related features drive tax value most strongly.
 </div>
 
 
 
-## Target Distribution & Residuals
+## Feature Importance
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/distributions.png" title="Feature Distributions" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    The target variable is strongly right-skewed. A small number of high-value outliers
-    inflate the mean and contributed to the model's maximum absolute error of $40.8M.
-    The model is well-balanced overall, with near-equal over- and under-prediction rates.
-</div>
+Feature importance rankings were consistent across models and closely mirrored EDA correlation findings. Discount-adjacent logistics features like delivery_delay_days mattered, but seller_avg_score, photo_count, and description_length ranked above or near delivery delay in importance, which indicated that merchant quality and listing quality are just as important as delivery logistics in driving customer satisfaction and give Olist merchants actionable direction beyond shipping speed.
 
+## Clustering Exploration
 
+K-Means, DBSCAN, and HAC were applied to the scaled feature set to look for natural order or seller segments beyond the existing labels. K-Means' best silhouette score (0.202 at k=4) indicated weak-to-moderate cluster separation. DBSCAN and HAC were run on subsamples due to the aforementioned runtime constraints, and Ward-linkage HAC produced the most realistic and balanced clustering of the methods tested, but overall the clustering methods mainly rediscovered structure already captured by existing labels rather than revealing novel segments.
 
 ## Limitations & Next Steps
 
-The model struggles with extreme high-value properties due to high skew in the target variable. Future work
-would include additional hyperparameter tuning, comparison with more complex models such as Random Forest, and enriching the
-dataset with neighborhood-level features (proximity to schools, walkability, comparable sales).
+The R² ceiling of roughly 0.19–0.23 and classification accuracy in the low 60s reflect how difficult it is to predict a five-point satisfaction score from a bimodal, U-shaped distribution, especially one assembled from nine merged tables with diluted per-feature signal. Future direction includes training Gradient Boosting on the full dataset rather than a 30% subsample to get a fairer comparison against Random Forest, testing additional review-text or sentiment features from the comment fields, and exploring seller-level (rather than order-level) aggregation to see whether merchant-quality signals become even stronger predictors at that grain.<img width="468" height="136" alt="image" src="https://github.com/user-attachments/assets/bdbf150f-873e-4726-acbe-75a1704029ca" />
+
 
 
 
 ## Code & Report
-
-- 📄 <a href="/assets/pdf/zillow_exec_summary.pdf">Executive Summary</a>
-- ⚙️ <a href="https://github.com/alyssaplayer/BU_OMDS_APlayerRepo/blob/main/DX603_FinalProject_ZillowValuationTool.ipynb">GitHub Repository with Project Code (Python) </a>
+- ⚙️ <a href="https://github.com/alyssaplayer/BU_OMDS_APlayerRepo/tree/main/AlyssaPlayer_DX799_MilestoneTwo">GitHub Repository with Project Code (Python)</a>
