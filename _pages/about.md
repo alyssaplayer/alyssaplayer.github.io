@@ -14,9 +14,9 @@ profile:
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, nice to meet you! I'm Alyssa, a data scientist who specialises in translating raw data into clear and strategic decisions. I rely on Python and R to build statistical models, machine learning workflows, and data visualisations using scikit-learn and the tidyverse. 
+Hi, nice to meet you! I'm Alyssa, a data scientist who specialises in translating raw data into clear and strategic decisions. I use Python, R, and SQL to build statistical models, machine learning workflows, and data visualisations using scikit-learn and the tidyverse. 
 
-I am currently seeking opportunities to apply my skills in the digital marketing, media, and entertainment industries. My background in scientific research has provided me with a strong foundation in hypothesis testing and experimental design, enabling me to develop robust, evidence-based models. 
+I am currently seeking opportunities to apply my skills in the technology, media, and entertainment industries. My diverse background in data science, molecular biology, and ecological research has provided me with a strong foundation in experimental design and translating messy data into valuable insights,  enabling me to develop robust, evidence-based models. 
 
 Outside of work, I embrace my creative side by making art and music, or recharge by spending time outdoors. 
 
