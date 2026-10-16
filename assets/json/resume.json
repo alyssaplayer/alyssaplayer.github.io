@@ -7,7 +7,7 @@
     "email": "alyssa18player@gmail.com",
     "phone": "(857) 318-1936",
     "url": "https://alyssaplayer.github.io/",
-    "summary": "Data scientist with a diverse research background, bringing hands-on experience in high-throughput experimental data, statistical modelling, and innovation to quantitative problem-solving. Pursuing an MS in Data Science to transition into analytics-driven roles in technology, media, and entertainment",
+    "summary": "Data scientist with a diverse research background, bringing hands-on experience in high-throughput experimental data, statistical modelling, and innovation to quantitative problem-solving. Pursuing an MS in Data Science to transition into analytics- and research- driven roles in technology, media, and entertainment",
     "location": {
       "postalCode": "CA 90042",
       "city": "Los Angeles",
@@ -94,19 +94,20 @@
   ],
   "publications": [
     {
-      "name": "A mosaic RBD-nanoparticle pan-sarbecovirus vaccine elicits nanobodies that target highly conserved epitopes. [Manuscript in preparation]",
-      "authors": "Malecek, K. E., Alvarez, J., Player, A., Keeffe, J. R., Gnanapragasam, P. N. P., Segovia, L. N., Tan, T. K,  Schimanski, L & Bjorkman, P. J.",
-      "releaseDate": "2026",
-      "url": "https://www.caltech.edu/",
-      "summary": "placeholder text."
+      "name": "A mosaic RBD-nanoparticle pan-sarbecovirus vaccine elicits nanobodies that target highly conserved epitopes",
+      "publisher": "bioRxiv",
+      "authors": "Malecek, K. E., Keeffe, J. R., Fan, C., Alvarez, J., Player, A., Gao, H., Gnanapragasam, P. N. P., Rho, S., Schimanski, L., Segovia, L. N., Tan, T. K., & Bjorkman, P. J.",
+      "releaseDate": "2026-10-13",
+      "url": "https://doi.org/10.64898/2026.10.13.758647",
+      "summary": "Contributed Beacon single-cell screening assays and nanobody characterization (cloning, ELISA, protein expression) to a study identifying llama nanobodies that target conserved RBD epitopes. Lead nanobodies neutralized SARS-CoV-2 variants of concern and zoonotic sarbecoviruses, showing potential for broadly protective therapeutics."
     },
-    {
-      "name": "Artificial reef models provide refuge habitat to keystone echinoderms against climate stressors. [Manuscript in preparation]",
-      "authors": "Player, A., Mũnoz-Williams, C.M., Williams, J.P., Pondella, D.J",
-      "releaseDate": "2027",
-      "url": "https://www.oxy.edu/academics/vantuna-research-group",
-      "summary": "placeholder text."
-    }
+  {
+    "name": "Artificial reef models provide refuge habitat to keystone echinoderms against climate stressors [Manuscript in preparation]",
+    "authors": "Player, A., Muñoz-Williams, C. M., Williams, J. P., & Pondella, D. J.",
+    "releaseDate": "2027",
+    "url": "https://www.oxy.edu/academics/vantuna-research-group",
+    "summary": "Lead-author study evaluating whether Palos Verdes Reef, California's first offshore in situ restoration reef, provides refuge habitat for sea stars and urchins recovering from the 2014–2016 wasting disease event, using 17 years (2008–2025) of SCUBA survey data to perform GLMMs and progressive-change BACIPS analyses in R. Preliminary results suggest giant sea stars and urchins recovered more strongly at the restoration reef and adjacent sites than at marine protected areas and reference reefs, with relief and substrate shaping density differently across eras."
+  }
   ],
   "projects": [
     {
