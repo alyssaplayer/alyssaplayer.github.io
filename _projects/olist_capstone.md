@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Predicting Customer Satisfaction (Olist)
-description: Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.  
+description: Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.
+summary: "Master's capstone predicting 1–5 star customer reviews for Olist, a Brazilian marketplace, by merging nine relational tables into ~88,000 orders. Compared KNN regression, Gradient Boosting classification and clustering, and found that seller rating, listing photos and description length matter as much as delivery delays in driving satisfaction."
 img: assets/img/olist_projectcard.png
 importance: 2
 category: business insights

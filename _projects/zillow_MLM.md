@@ -2,6 +2,7 @@
 layout: page
 title: Automated Property Valuation
 description: Supervised ML model to predict residential assessed property values using Zillow data
+summary: "Automated valuation model for residential properties trained on 77,000+ Zillow listings. Engineered size and age features, compared Lasso, Decision Tree and Gradient Boosting, and selected Gradient Boosting with a test MAE of ~$196K, beating the linear baseline by over $40K in cross-validation."
 img: assets/img/zillow_house.png
 importance: 3
 category: business insights

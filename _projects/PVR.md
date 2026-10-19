@@ -2,6 +2,7 @@
 layout: page
 title: Palos Verdes Reef as Refuge Habitat
 description: Analysis of the Palos Verdes Reef as a refuge for climate-threatened species.
+summary: "Statistical analysis in R of whether Palos Verdes Reef, an artificial reef in the Southern California Bight, acts as a refuge for sea stars and sea urchins threatened by wasting disease and climate change. Used BACIPS models and generalised linear mixed models to compare species densities before, during and after wasting events, in collaboration with the Vantuna Research Group at Occidental College."
 img: assets/img/batstars.jpeg
 importance: 1
 category: scientific research
