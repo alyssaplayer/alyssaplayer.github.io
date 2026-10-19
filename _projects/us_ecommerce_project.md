@@ -2,6 +2,7 @@
 layout: page
 title: Predicting Key Profit Drivers from US E-Commerce Records 
 description: Application of varied machine learning techniques to a US E-Commerce dataset from 2020 to identify key profit drivers as part of my Master's capstone project at Boston University.
+summary: "Master's capstone at Boston University identifying order-level profit drivers across ~3,300 US e-commerce transactions. A tuned Gradient Boosting model reached a test R² of 0.90 (RMSE $36.81), and a Random Forest classifier separated high- from low-profit orders with 90% accuracy. Discount and sub-category emerged as the key levers for sales and supply chain teams."
 img: assets/img/us_ecommerce_projectcard.png
 importance: 1
 category: business insights
