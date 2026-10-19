@@ -772,8 +772,45 @@ footer.sticky-bottom {
     white-space: nowrap;
   }
 
+  // Uniform cards: equal heights per row, same image crop, same text length
+  .col > a {
+    display: block;
+    height: 100%;
+  }
+
   .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    figure {
+      margin: 0;
+    }
+
+    img.card-img-top {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .card-body {
+      flex: 1;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      line-height: 1.3;
+      min-height: 2.6em; // reserves two lines so descriptions line up
+    }
+
+    .card-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 
   a:hover .card {
