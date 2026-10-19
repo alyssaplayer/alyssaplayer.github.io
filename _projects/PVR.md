@@ -4,7 +4,7 @@ title: Palos Verdes Reef as Refuge Habitat
 description: Analysis of the Palos Verdes Reef as a refuge for climate-threatened species.
 img: assets/img/batstars.jpeg
 importance: 1
-category: ecology
+category: scientific research
 links:
   - name: GitHub
     url: https://github.com/alyssaplayer/AP-VRG-PVR-RefugiaAR

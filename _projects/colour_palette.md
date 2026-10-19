@@ -4,7 +4,7 @@ title: Colour Palette Extractor Tool
 description: A Python tool that uses K-Means clustering to extract dominant colours from an image and outputs hex codes with accessibility recommendations. 
 img: assets/img/pinterest_card.png
 importance: 1
-category: for fun
+category: tools
 ---
 
 The purpose of this tool is to give designers a data-driven starting point for building a brand/design identity by extracting the dominant colour palette of any inspiration image. 

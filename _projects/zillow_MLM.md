@@ -4,7 +4,7 @@ title: Automated Property Valuation
 description: Supervised ML model to predict residential assessed property values using Zillow data
 img: assets/img/zillow_house.png
 importance: 3
-category: machine learning
+category: business insights
 permalink: /projects/zillow/
 ---
 

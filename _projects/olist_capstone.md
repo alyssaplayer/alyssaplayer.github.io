@@ -3,8 +3,8 @@ layout: page
 title: Predicting Customer Satisfaction (Olist)
 description: Application of varied machine learning techniques to data from the e-commerce platform, Olist, to predict customer satisfaction from different features.  
 img: assets/img/olist_projectcard.png
-importance: 1
-category: machine learning
+importance: 2
+category: business insights
 permalink: /projects/olistcapstone/
 ---
 
