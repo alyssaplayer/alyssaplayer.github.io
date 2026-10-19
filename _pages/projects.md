@@ -5,7 +5,6 @@ permalink: /projects/
 description: A curated selection of data science, machine learning, and research projects.
 nav: true
 nav_order: 2
-horizontal: false
 published: true
 
 # Each group renders as a block of sections. A section only appears once it has
@@ -47,21 +46,24 @@ project_groups:
         <h2 class="category">{{ section.title }}</h2>
         {% if section.tag %}<span class="project-tag">{{ section.tag }}</span>{% endif %}
       </a>
-      {% if page.horizontal %}
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-2">
+      <div class="project-list">
         {% for project in section_projects %}
-          {% include projects_horizontal.liquid %}
+        <a class="project-row" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+          <div class="project-thumb">
+            {% if project.img %}
+              {% include figure.liquid loading="lazy" path=project.img sizes="200px" alt=project.title class="project-thumb-img" %}
+            {% else %}
+              <div class="project-thumb-placeholder"><i class="fa-solid fa-chart-line"></i></div>
+            {% endif %}
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-summary">{{ project.summary | default: project.description }}</p>
+            <span class="project-more">View project <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
         {% endfor %}
-        </div>
       </div>
-      {% else %}
-      <div class="row row-cols-1 row-cols-md-3">
-        {% for project in section_projects %}
-          {% include projects.liquid %}
-        {% endfor %}
-      </div>
-      {% endif %}
     </div>
     {% endif %}
   {% endfor %}
