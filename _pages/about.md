@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data Scientist | Scientific Researcher
+subtitle: Data Scientist | Data Analyst | Scientific Researcher
 
 profile:
   align: right
