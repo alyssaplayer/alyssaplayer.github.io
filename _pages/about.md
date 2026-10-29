@@ -14,11 +14,17 @@ profile:
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, nice to meet you! I'm Alyssa, a data scientist who specialises in translating raw data into clear and strategic decisions. I use Python, R, and SQL to build statistical models, machine learning workflows, and data visualisations using scikit-learn and the tidyverse. 
+Hi, nice to meet you! I’m Alyssa, a data scientist who turns messy, real-world data into clear, strategic decisions.
 
-I am currently seeking opportunities to apply my skills in the technology, media, and entertainment industries. My diverse background in data science, molecular biology, and ecological research has provided me with a strong foundation in experimental design and translating messy data into valuable insights,  enabling me to develop robust, evidence-based models. 
+I’m currently a Research Technician at Caltech, where I analyze high-throughput single-cell data (~20,000 samples per run), built Python pipelines and automations that save my team hours each week, and co-authored a recently published preprint. I’m also completing my MS in Data Science at Boston University (December 2026) to build on the analytical work that I found I loved most through my research and use these skills to apply to broader industries. 
 
-Outside of work, I embrace my creative side by making art and music, or recharge by spending time outdoors. 
+I build statistical models, machine learning workflows, and visualizations in Python, R and SQL, using scikit-learn, Keras and the tidyverse. My background in molecular biology and ecological research gave me a strong foundation in experimental design and causal inference, allowing me to figure out not just what’s happening in the data, but why and what we can use to predict future outcomes. 
+
+I’m now looking for analytics and data science roles in media, entertainment and marketing, where I can help teams understand their audiences and make better decisions.
+
+Outside of work, I make music and art, or recharge outdoors by hiking, skiing, sailing and diving. 
+
+Explore my projects below, or reach out on LinkedIn. I’d love to connect!
 
 <div class="mt-4 mb-4 d-flex justify-content-center">
   <div class="p-4 text-center" style="
